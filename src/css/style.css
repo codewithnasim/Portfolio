@@ -212,10 +212,10 @@ img {
   color: var(--first-color);
 }
 .home__img {
-position: absolute;
-    right: -9px;
-    bottom: 57px;
-    width: 219px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 260px;
 }
 .home__blob {
   fill: var(--first-color);
@@ -389,10 +389,7 @@ position: absolute;
     row-gap: 2rem;
   }
   .home__img {
-        position: absolute;
-    right: 0;
-    bottom: 79px;
-    width: 211px;
+    width: 200px;
   }
 }
 @media screen and (min-width: 576px) {
@@ -410,10 +407,8 @@ position: absolute;
     margin-right: var(--mb-4);
   }
   .home__img {
-        position: absolute;
-    right: 0;
-    bottom: 79px;
-    width: 211px;
+    width: 300px;
+    bottom: 25%;
   }
   .about__container {
     grid-template-columns: repeat(2, 1fr);
