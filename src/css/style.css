@@ -389,7 +389,11 @@ img {
     row-gap: 2rem;
   }
   .home__img {
+    position: absolute;
+    right: 0;
+    bottom: 65px;
     width: 200px;
+}
   }
 }
 @media screen and (min-width: 576px) {
