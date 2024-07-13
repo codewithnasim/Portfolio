@@ -27,7 +27,7 @@ function App() {
       <Navbar> </Navbar>
 
       <Routes>
-        <Route path="/home" element={<Home />} />
+        <Route path="/Portfolio" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/project" element={<Project />} />
         <Route path="/contact" element={<Contact />} />
