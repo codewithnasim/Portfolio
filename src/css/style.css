@@ -389,7 +389,10 @@ position: absolute;
     row-gap: 2rem;
   }
   .home__img {
-    width: 200px;
+        position: absolute;
+    right: 0;
+    bottom: 79px;
+    width: 211px;
   }
 }
 @media screen and (min-width: 576px) {
@@ -407,8 +410,10 @@ position: absolute;
     margin-right: var(--mb-4);
   }
   .home__img {
-    width: 300px;
-    bottom: 25%;
+        position: absolute;
+    right: 0;
+    bottom: 79px;
+    width: 211px;
   }
   .about__container {
     grid-template-columns: repeat(2, 1fr);
