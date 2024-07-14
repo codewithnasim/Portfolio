@@ -5,12 +5,6 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-<<<<<<< HEAD
-=======
-    "predeploy": "npm run build",
-    "deploy": "vite build && gh-pages -d dist",
-    "dev": "vite",
->>>>>>> 2031d9df7c59ec102faa4d62deb1214eef8018d9
     "build": "vite build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
