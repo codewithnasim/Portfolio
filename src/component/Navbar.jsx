@@ -49,7 +49,7 @@ const Navbar = (props) => {
             Home
           </Link>
           <Link
-            to="/project"
+            to="/"
             relative="path"
             className={`nav-item nav-link  ${isActive("/project")}`}>
             Project
