@@ -43,7 +43,7 @@ const Navbar = (props) => {
       <nav className="sticky">
         <div className="topnav " id="myTopnav">
           <Link
-            to="/Portfolio"
+            to="/"
             relative="path"
             className={`nav-item nav-link  ${isActive("/")}`}>
             Home
