@@ -13,20 +13,26 @@ const Project = () => {
         <h2 className="section-title">Work</h2>
 
         <div className="work__container bd-grid">
-          <Link to="/textutils" relative="path" className="work__img">
+          <Link to="/Portfolio/textutils" relative="path" className="work__img">
             <img src={im} alt="" />
           </Link>
           <Link to="/project/newsdekho" relative="path" className="work__img">
             <img src={newsphoto} alt="" />
           </Link>
-          <Link to="/passgenerator" relative="path" className="work__img">
+          <Link
+            to="/Portfolio/passgenerator"
+            relative="path"
+            className="work__img">
             <img src={pass} alt="" />
           </Link>
 
-          <Link to="/cureencyconverter" relative="path" className="work__img">
+          <Link
+            to="/Portfolio/cureencyconverter"
+            relative="path"
+            className="work__img">
             <img src={currency} alt="" />
           </Link>
-          <Link to="/tictactoe" relative="path" className="work__img">
+          <Link to="/Portfolio/tictactoe" relative="path" className="work__img">
             <img src={tictac} alt="" />
           </Link>
         </div>

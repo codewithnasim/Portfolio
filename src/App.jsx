@@ -30,12 +30,11 @@ function App() {
 
       <Routes>
         <Route path="/Portfolio" element={<Home />} />
-      
-        <Route path="/about" element={<About />} />
-        <Route path="/project" element={<Project />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/skills" element={<Skills />} />
-        <Route path="/textutils" element={<TextUtils />} />
+        <Route path="/Portfolio/about" element={<About />} />
+        <Route path="/Portfolio/project" element={<Project />} />
+        <Route path="/Portfolio/contact" element={<Contact />} />
+        <Route path="/Portfolio/skills" element={<Skills />} />
+        <Route path="/Portfolio/textutils" element={<TextUtils />} />
         //news dekho
         <Route path="project/newsdekho" element={<News />} />
         <Route path="project/newsdekho" element={<News />} />
@@ -44,9 +43,12 @@ function App() {
         <Route path="/science" element={<Science />} />
         <Route path="/entertainment" element={<Entertainment />} />
         <Route path="/technology" element={<Technology />} />
-        <Route path="/passgenerator" element={<Passgenerator />} />
-        <Route path="/cureencyconverter" element={<CurrencyConvert />} />
-        <Route path="/tictactoe" element={<Tictactoe />} />
+        <Route path="/Portfolio/passgenerator" element={<Passgenerator />} />
+        <Route
+          path="/Portfolio/cureencyconverter"
+          element={<CurrencyConvert />}
+        />
+        <Route path="/Portfolio/tictactoe" element={<Tictactoe />} />
       </Routes>
     </>
   );
