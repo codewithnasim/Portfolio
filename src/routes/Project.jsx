@@ -3,6 +3,8 @@ import im from "../assets/textutils.png";
 import newsphoto from "../assets/news.png";
 import { Link } from "react-router-dom";
 import pass from "../assets/password.jpeg";
+import currency from "../assets/currency.webp";
+import tictac from "../assets/tictactoe.avif";
 
 const Project = () => {
   return (
@@ -19,6 +21,13 @@ const Project = () => {
           </Link>
           <Link to="/passgenerator" relative="path" className="work__img">
             <img src={pass} alt="" />
+          </Link>
+
+          <Link to="/cureencyconverter" relative="path" className="work__img">
+            <img src={currency} alt="" />
+          </Link>
+          <Link to="/tictactoe" relative="path" className="work__img">
+            <img src={tictac} alt="" />
           </Link>
         </div>
       </section>

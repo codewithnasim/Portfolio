@@ -19,6 +19,8 @@ import Sports from "./project/newsdekho/Sports.jsx";
 import Technology from "./project/newsdekho/Technology.jsx";
 
 import Passgenerator from "./project/passgenerator/passwordGen.jsx";
+import CurrencyConvert from "./project/currencyConverter/CurrencyConvert.jsx";
+import Tictactoe from "./project/TicTacToe/Tictactoe.jsx";
 
 function App() {
   return (
@@ -28,6 +30,7 @@ function App() {
 
       <Routes>
         <Route path="/Portfolio" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/project" element={<Project />} />
         <Route path="/contact" element={<Contact />} />
@@ -42,6 +45,8 @@ function App() {
         <Route path="/entertainment" element={<Entertainment />} />
         <Route path="/technology" element={<Technology />} />
         <Route path="/passgenerator" element={<Passgenerator />} />
+        <Route path="/cureencyconverter" element={<CurrencyConvert />} />
+        <Route path="/tictactoe" element={<Tictactoe />} />
       </Routes>
     </>
   );
