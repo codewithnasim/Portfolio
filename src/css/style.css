@@ -479,7 +479,6 @@ img {
     width: 300px;
   }
   .skills__container {
-    grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
     align-items: center;
     text-align: initial;
@@ -489,15 +488,16 @@ img {
     column-gap: 2rem;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (max-width: 992px) {
   .bd-grid {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 10px;
+    margin-right: 10px;
   }
-  .home {
+  /* .home {
     padding: 10rem 0 2rem;
-  }
+  } */
   .home__img {
-    width: 450px;
+    width: 200px;
+    margin-bottom: 65px;
   }
 }

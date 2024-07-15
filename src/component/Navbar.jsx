@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import "../css/nav.css";
-// import { DarkModeSwitch } from "react-toggle-dark-mode";
+import { MdOutlineDarkMode } from "react-icons/md";
 import { useState } from "react";
 
 const Navbar = (props) => {
@@ -45,33 +45,33 @@ const Navbar = (props) => {
           <Link
             to="/Portfolio"
             relative="path"
-            className={`nav-item nav-link  ${isActive("/")}`}>
+            className={`nav-item nav-link  ${isActive("/Portfolio")}`}>
             Home
           </Link>
           <Link
             to="/Portfolio/project"
             relative="path"
-            className={`nav-item nav-link  ${isActive("/project")}`}>
+            className={`nav-item nav-link  ${isActive("/Portfolio/project")}`}>
             Project
           </Link>
           <Link
             to="/Portfolio/contact"
             relative="path"
-            className={`nav-item nav-link  ${isActive("/contact")}`}>
+            className={`nav-item nav-link  ${isActive("/Portfolio/contact")}`}>
             {" "}
             Contact
           </Link>
           <Link
             to="/Portfolio/about"
             relative="path"
-            className={`nav-item nav-link  ${isActive("/about")}`}>
+            className={`nav-item nav-link  ${isActive("/Portfolio/about")}`}>
             {" "}
             About
           </Link>
           <Link
             to="/Portfolio/skills"
             relative="path"
-            className={`nav-item nav-link  ${isActive("/skills")}`}>
+            className={`nav-item nav-link  ${isActive("/Portfolio/skills")}`}>
             {" "}
             Skills
           </Link>
@@ -82,8 +82,8 @@ const Navbar = (props) => {
             <Link
               onClick={ColorHandler}
               relative="path"
-              className="nav-item nav-link text-white items-end">
-              Change Mode
+              className="nav-item nav-link text-white">
+              <MdOutlineDarkMode size={26} />
             </Link>{" "}
           </div>
         </div>

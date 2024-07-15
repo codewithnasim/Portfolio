@@ -2,7 +2,10 @@
   background-color: #333;
   overflow: hidden;
 }
-
+.active {
+  background-color: rgb(5, 60, 5);
+  border-radius: 1rem;
+}
 /* Style the links inside the navigation bar */
 .topnav a {
   float: left;
