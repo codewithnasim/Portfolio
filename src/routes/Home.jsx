@@ -19,7 +19,7 @@ const Home = () => {
             I'am <span className="home__title-color">Nasim</span>
             <br /> Web Developer
           </h1>
-          <Link to="/contact" relative="path" className="button">
+          <Link to="/Portfolio/contact" relative="path" className="button">
             Contact
           </Link>
         </div>
