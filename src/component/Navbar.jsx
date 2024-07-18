@@ -1,18 +1,10 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import "../css/nav.css";
+import "../css/Navbar.css";
 import { MdOutlineDarkMode } from "react-icons/md";
 import { useState } from "react";
 
 const Navbar = (props) => {
-  function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
-  }
   const location = useLocation();
 
   // Determine the active link based on the current pathname
@@ -37,53 +29,52 @@ const Navbar = (props) => {
 
   return (
     <>
-      <link
+      {/* <link
         rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link> */}
       <nav className="sticky">
-        <div className="topnav " id="myTopnav">
+        <div className="topnav" id="myTopnav">
           <Link
-            to="/Portfolio"
+            to="/"
             relative="path"
-            className={`nav-item nav-link  ${isActive("/Portfolio")}`}>
+            className={`nav-item nav-link  ${isActive("/")}`}>
             Home
           </Link>
+
           <Link
-            to="/Portfolio/project"
+            to="/project"
             relative="path"
-            className={`nav-item nav-link  ${isActive("/Portfolio/project")}`}>
+            className={`nav-item nav-link  ${isActive("/project")}`}>
             Project
           </Link>
           <Link
-            to="/Portfolio/contact"
+            to="/contact"
             relative="path"
-            className={`nav-item nav-link  ${isActive("/Portfolio/contact")}`}>
+            className={`nav-item nav-link  ${isActive("/contact")}`}>
             {" "}
             Contact
           </Link>
           <Link
-            to="/Portfolio/about"
+            to="/about"
             relative="path"
-            className={`nav-item nav-link  ${isActive("/Portfolio/about")}`}>
+            className={`nav-item nav-link  ${isActive("/about")}`}>
             {" "}
             About
           </Link>
           <Link
-            to="/Portfolio/skills"
+            to="/skills"
             relative="path"
-            className={`nav-item nav-link  ${isActive("/Portfolio/skills")}`}>
+            className={`nav-item nav-link  ${isActive("/skills")}`}>
             {" "}
             Skills
           </Link>
-          <Link to="#" relative="path" className="icon" onClick={myFunction}>
-            <i className="fa fa-bars"></i>
-          </Link>
+
           <div className="topnav" id="togbtn">
             <Link
               onClick={ColorHandler}
               relative="path"
               className="nav-item nav-link text-white">
-              <MdOutlineDarkMode size={26} />
+              <MdOutlineDarkMode size={20} />
             </Link>{" "}
           </div>
         </div>

@@ -35,14 +35,8 @@ export default function TextUtils(props) {
 
   return (
     <>
-      <div
-        className="container"
-        style={{ color: props.mode === "dark" ? "white" : "#042743" }}>
-        <h1
-          className="mb-4 lg"
-          style={{ color: props.mode === "dark" ? "white" : "black" }}>
-          Enter Text to Analyze
-        </h1>
+      <div className="container">
+        <h1 className="text-3xl text-center p-4">Enter Text to Analyze</h1>
         <div className="mb-3">
           <textarea
             className={`form-control bg-${props.mode}`}
@@ -72,9 +66,7 @@ export default function TextUtils(props) {
           Remove extra space
         </button>
       </div>
-      <div
-        className="container my-3"
-        style={{ color: props.mode === "dark" ? "white" : "#042743" }}>
+      <div className="container my-3">
         <h2>Your text summery is </h2>
         <p>
           total{" "}

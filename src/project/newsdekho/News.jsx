@@ -380,12 +380,7 @@ export default class News extends Component {
   render() {
     return (
       <>
-        <div className="container my-3">
-          <h1
-            style={{ textAlign: "center", padding: "30px" }}
-            className="text-5xl">
-            Welcome to News Dekho
-          </h1>
+        <div className="container">
           <NavbarNews />
           <div className="row">
             {this.state.articles.map((element) => {

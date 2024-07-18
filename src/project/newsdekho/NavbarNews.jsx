@@ -3,15 +3,6 @@ import { Link, useLocation } from "react-router-dom";
 // import {useState} from "react"
 import "../../css/newsNav.css";
 const NavbarNews = () => {
-  function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
-  }
-
   const location = useLocation();
 
   // Determine the active link based on the current pathname
@@ -20,11 +11,8 @@ const NavbarNews = () => {
   };
   return (
     <>
-      <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
-      <nav className="sticky">
-        <div className="topnav bg-white center " id="myTopnav">
+      <nav className="fixed z-1 top-10 bg-slate-300 ">
+        <div className="navComponent" id="mynavComponent">
           <Link
             className={`nav-item nav-link text-black ${isActive("/newsdekho")}`}
             to="/newsdekho">
@@ -68,9 +56,6 @@ const NavbarNews = () => {
             to="/technology">
             {" "}
             Technology
-          </Link>
-          <Link to="" relative="path" className="icon" onClick={myFunction}>
-            <i className="fa fa-bars"></i>
           </Link>
         </div>
       </nav>
