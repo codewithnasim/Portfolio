@@ -11,7 +11,7 @@
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 20px;
 }
 #togbtn {
   float: right;
@@ -48,9 +48,9 @@
   display: block;
   color: #ffffff;
   text-align: center;
-  padding: 13px 14px;
+  padding: 14px 14px;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 14px;
 }
 /* #togbtn {
   float: left;

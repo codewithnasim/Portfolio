@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import React from "react";
 import con from "../assets/contact.avif";
 
-export default function ContactPageOne() {
+export default function Contact() {
   const Submit = () => {
     document.getElementById("btn").innerHTML = "Request submitted succesfully";
   };
